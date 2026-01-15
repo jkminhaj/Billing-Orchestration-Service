@@ -1,15 +1,19 @@
 import express from "express";
 import errorHandler from "./middlewares/error.middleware.js";
-import notFound from "./middlewares/notFound.middleware.js";
 import cors from "cors";
-
+import router from "./routes.js";
 
 const app = express();
 
 // Middlewares
 app.use(express.json());
 app.use(cors());
-app.use(notFound);
+// Centralized error handler
 app.use(errorHandler);
 
-export default app ;
+app.use("/api", router);
+app.get("/", (req, res) => {
+    res.send("Server is working!");
+})
+
+export default app;
