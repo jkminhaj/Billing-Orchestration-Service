@@ -1,0 +1,19 @@
+{
+  "name": "billing-orchestration-service",
+  "version": "1.0.0",
+  "description": "A backend service for subscription management and recurring billing with Stripe integration and webhook-based verification.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkminhaj/Billing-Orchestration-Service.git"
+  },
+  "author": "Minhaj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jkminhaj/Billing-Orchestration-Service/issues"
+  },
+  "homepage": "https://github.com/jkminhaj/Billing-Orchestration-Service#readme"
+}
